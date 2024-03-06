@@ -1,0 +1,7 @@
+sudo docker build -t greenbone-scan .
+
+
+
+
+sudo  docker run --rm -it --network host -v /tmp/gvm/gvmd:/tmp/gvm/gvmd -v /var/lib/gvm:/var/lib/gvm -v /var/run/docker.sock:/var/run/docker.sock greenbone-scan /bin/bash
+
